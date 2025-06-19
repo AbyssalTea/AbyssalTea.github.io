@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name - Portfolio</title>
+  <title>Trevor Wotruba - Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -29,7 +29,7 @@
     .container {
       max-width: 1000px;
       margin: 2rem auto;
-      padding: 0 20px;
+      padding: 5px 20px;
       background: #fff;
     }
 
@@ -43,13 +43,47 @@
       text-align: center;
       padding: 1rem 0;
     }
+
+		.project img, .project video {
+			margin-top: 0.5rem;
+			max-width: 100%;
+			height: auto;
+		}
+		
+		details summary {
+			cursor: pointer;
+			padding: 0.5rem 0;
+		}
+
+		details summary h3 {
+			display: inline;
+		}
+
+		details[open] summary {
+			font-weight: bold;
+		}
+		
+		details > *:not(summary) {
+			border-top: 1px solid #ccc;
+			margin-top: 0.5rem;
+			padding-top: 0rem;
+		}
+
+		details[open]::after {
+			content: "";
+			display: block;
+			border-bottom: 1px solid #ccc;
+			margin-top: 1rem;
+		}
+
+
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Your Name</h1>
-    <p>Web Developer | Designer | [Your Role]</p>
+    <h1>Trevor Wotruba</h1>
+    <p>Programmer | Web Developer | 3D Modeler</p>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -60,28 +94,133 @@
   <div class="container">
     <section id="about">
       <h2>About Me</h2>
-      <p>Write a short bio here. Mention who you are, what you do, and what makes you awesome!</p>
+      <p>I’m a recent Computer Engineering & Computer Science graduate with hands-on experience in IT support, 
+			software development, and team leadership. I love designing and building games and interactive projects 
+			that are both functional and engaging. Whether focusing on public or personal projectsI aim to create 
+			games and tools that are intuitive, impactful, and fun to play.</p>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <h3>Project Title</h3>
-      <p>Describe your project here. Include what technologies you used and any links to demos or code.</p>
+		<section id="projects">
+			<h2>Projects</h2>
 
-      <h3>Another Project</h3>
-      <p>Same idea — briefly describe it, link to it, or include screenshots if you expand later.</p>
-    </section>
+			<!-- Games Section -->
+			<details>
+				<summary><h3>Games</h3></summary>
+
+				<div class="project">
+					<h4>The Floor is Confusing</h4>
+					<p>Short description of Game 4.</p>
+					<p><strong>Engine:</strong> Unity</p>
+					<p><a href="https://github.com/BTandon16/TheFloorIsConfusing" target="_blank">Link to Github Repo</a></p>
+					<p><a href="https://google.com" target="_blank">Link to Itch Page (WIP)</a></p>
+					<video controls width="500">
+						<source src="video/game4.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+
+				<div class="project">
+					<h4>Fleeing Footsteps</h4>
+					<p>Short description of Game 1.</p>
+					<p><strong>Engine:</strong> p5.js & html</p>
+					<p><a href="https://abyssaltea.itch.io/fleeing-footsteps" target="_blank">Link to Itch Page</a></p>
+				</div>
+
+				<div class="project">
+					<h4>Runic Ruin</h4>
+					<p>Short description of Game 2.</p>
+					<p><strong>Engine:</strong> Puzzlescript</p>
+					<p><a href="https://abyssaltea.itch.io/runic-ruin" target="_blank">Link to Itch Page</a></p>
+				</div>
+
+				<div class="project">
+					<h4>Sleepless Shepard</h4>
+					<p>Short description of Game 3.</p>
+					<p><strong>Engine:</strong> p5.js & html</p>
+					<p><a href="https://abyssaltea.itch.io/sleepless-shepard" target="_blank">Link to Itch Page</a></p>
+				</div>
+
+				
+			</details>
+
+			<!-- 3D Scenes & Animations Section -->
+			<details>
+				<summary><h3>3D Scenes & Animations</h3></summary>
+
+				<div class="project">
+					<h4>A Darkening World</h4>
+					<p>Brief description of Scene 1.</p>
+					<img src="images/OneShot.png" alt="OneShot Vanitas" width="500">
+				</div>
+
+				<div class="project">
+					<h4>Robot Character Model</h4>
+					<p>Brief description of Scene 2.</p>
+					<img src="images/Char_Front.jpg" alt="Front View" width="400">
+					<img src="images/Char_Side.jpg" alt="Side View" width="400">
+					<img src="images/Char_Persp.jpg" alt="Angled View" width="400">
+					<img src="images/Char_Rigged.jpg" alt="Rigged View" width="400">
+				</div>
+
+				<div class="project">
+					<h4>RenderCeption</h4>
+					<p>Brief description of Animation 1.</p>
+					<video controls width="500">
+						<source src="images/RenderCeption.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+
+				<div class="project">
+					<h4>Past Packages</h4>
+					<p>Brief description of Animation 2.</p>
+					<video controls width="500">
+						<source src="images/PastPackages.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+
+				<div class="project">
+					<h4>Practicing Pyromancer</h4>
+					<p>Brief description of Animation 3.</p>
+					<video controls loop width="500">
+						<source src="images/PracticingPyromancer.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</details>
+
+			<!-- Websites & Tools Section -->
+			<details>
+				<summary><h3>Websites & Tools</h3></summary>
+
+				<div class="project">
+					<h4>Field Day Vault</h4>
+					<p>Short description of the tool.</p>
+					<p><a href="https://google.com" target="_blank">View Website (WIP)</a></p>
+				</div>
+
+				<div class="project">
+					<h4>Tool Title</h4>
+					<p>Short description of the tool.</p>
+					<p><a href="https://google.com" target="_blank">Download Tool (WIP)</a></p>
+				</div>
+			</details>
+
+		</section>
+
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-      <p>LinkedIn: <a href="#" target="_blank">Your LinkedIn</a></p>
-      <p>GitHub: <a href="#" target="_blank">Your GitHub</a></p>
+      <p>Email: <a href="mailto:twotruba13@gmail.com">twotruba13@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/trevor-wotruba/" target="_blank">My LinkedIn</a></p>
+      <p>GitHub: <a href="https://github.com/AbyssalTea" target="_blank">My GitHub</a></p>
+			<p>Itch.io: <a href="https://abyssaltea.itch.io/" target="_blank">My Itch Page</a></p>
     </section>
   </div>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>Last Updated 06/17/2025</p>
   </footer>
 
 </body>
